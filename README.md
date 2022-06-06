@@ -71,7 +71,8 @@ To get a local copy up and running follow these simple example steps.
 - GitHub: [@githubhandle](https://github.com/soulemanou-software)
 - Twitter: [@twitterhandle](https://twitter.com/fastdevz1)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
- 👤 **Author2**
+## Authors   
+👤 **Author2**
  - ***SNelson ongit*i**
 - GitHub: [https://github.com/MicroverseNelson)
 - Twitter: [@twitterhandle](https://twitter.com/PentonPoet)
