@@ -3,7 +3,7 @@
 # Project Name: Awesome book project in js 
 
 > Description the project.
->This project shows all my abilities as a software developer  and also as a frontEnd developer and this is my first capstone project,about a tech company called fastdevz.
+>This project is about a book website called awesome book which proposess you variety of book to add and remove from you store.
 
 ## Built With
 
