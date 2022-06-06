@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name: Capstone for Tech company (FASTDEVZ) 
+# Project Name: Awesome book project in js 
 
 > Description the project.
 >This project shows all my abilities as a software developer  and also as a frontEnd developer and this is my first capstone project,about a tech company called fastdevz.
@@ -20,8 +20,9 @@
 
 ## Live Demo
 
-[Live Demo Link](https://soulemanou-software.github.io/Capstone--pro--1/)
-[video link here](https://youtu.be/-JPS8M1ka44)
+[Live Demo Link](https://soulemanou-software.github.io/awesome-book/)
+## Live video
+[video link here](#)
 
 ## Getting Started
 
@@ -70,6 +71,13 @@ To get a local copy up and running follow these simple example steps.
 - GitHub: [@githubhandle](https://github.com/soulemanou-software)
 - Twitter: [@twitterhandle](https://twitter.com/fastdevz1)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+ 👤 **Author2**
+ - ***SNelson ongit*i**
+- GitHub: [https://github.com/MicroverseNelson)
+- Twitter: [@twitterhandle](https://twitter.com/PentonPoet)
+- LinkedIn: [https://ke.linkedin.com/in/nelson-ongiti-4036a119a)
+    
+
     
     
 ## 🤝 Contributing
