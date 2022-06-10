@@ -8,16 +8,50 @@
     <title>Awesome Books</title>
 </head>
 <body>
-   <h1>Awesome Books</h1>
+ 
+    <header>
+        <nav class="navbar">
+            <h2><a href="#">Awesome Books</a></h2>
+            <ul class="link">
+                <li><a onclick="showBookList()" href="#">List</a></li>
+                <li><a onclick="showForm()" href="#">Add new</a></li>
+                <li><a onclick="showContact()" href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <span id="date"></span>
+    </header>
 
-   <div class="books"></div>
+  <div class="main">
+    <section id="id1" class="display">
+        <h1>All awesome books</h1>
+        <div class="books">
 
-   <form method="post">
-    <input id="title" type="text" name="title" placeholder="Title" required><br><br>
-    <input id="author" type="text" name="author" placeholder="Author" required><br><br>
-    <input id="add" type="submit" value="Add" required>
-   </form>
+        </div>
+    </section><br>
 
+    <form id="id2" method="post">
+        <h2>Add a new book</h2>
+        <input type="text" id="title" name="title" placeholder="Title" required><br><br>
+        <input type="text" id="author" name="author" placeholder="Author" required><br><br>
+        <input type="submit" class="done" value="Add" id="submit">
+    </form>
+    <section id="id3" class="contact">
+        <div>
+           <h2>Contact information</h2>
+           <p>Do you have any questions or you just want to say "hello"? You can reach out to us!</p>
+           <ul>
+               <li>Our email: thomas@gmail.com gabenge@gmail.com farida@gmail.com</li>
+               <li>Our phone number: 0807008673</li>
+               <li>Our address: Streetname Romaniroro, 427130, Country Romania</li>
+           </ul>
+        </div>
+    </section>
+    </div>
+    <footer class="copy">
+        <div class="copyright">
+          <small>Copyright: Created by Farida, Thomas and Gbenga</small>
+        </div>
+      </footer>
    <script src="js/app.js" defer></script>
 </body>
 </html>

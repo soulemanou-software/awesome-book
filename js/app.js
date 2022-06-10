@@ -15,7 +15,7 @@ const main = document.querySelector('.books');
 function addBook(enteredTitle, enteredAuthor) {
   books.push({ title: enteredTitle, author: enteredAuthor });
 }
-// Display books here
+// Dsiplay books
 function show(index) {
   const bookName = books[index].title;
   const authorName = books[index].author;
