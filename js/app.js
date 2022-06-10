@@ -1,10 +1,15 @@
+//Book class here 
+/* eslint-disable max-classes-per-file */
 class books{
-    constructor(title,author){
+    constructor(title,author,ids){
         this.title = title;
         this.author = author;
+        this.ids = ids;
     }
-    set books(title,author){
+    get  getBooks(){
+        return(
 
+        );
     }
 }
 //selectibng the container
