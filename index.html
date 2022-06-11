@@ -1,58 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Awesome Books</title>
-</head>
-<body>
- 
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Awesome books</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <header>
-        <nav class="navbar">
-            <h2><a href="#">Awesome Books</a></h2>
-            <ul class="link">
-                <li><a onclick="showBookList()" href="#">List</a></li>
-                <li><a onclick="showForm()" href="#">Add new</a></li>
-                <li><a onclick="showContact()" href="#">Contact</a></li>
-            </ul>
+      <div class="container">
+        <nav class="head">
+          <h3>Awesome Books</h3>
+          <ul>
+            <li>
+              <a
+                href="#"
+                class="link link--active"
+                id="link-list"
+                data-section="books-list"
+                >List</a
+              >
+            </li>
+            <li>
+              <a href="#" class="link" id="link-add" data-section="book-form"
+                >Add new</a
+              >
+            </li>
+            <li>
+              <a href="#" class="link" id="link-contact" data-section="contact"
+                >Contact</a
+              >
+            </li>
+          </ul>
         </nav>
-        <span id="date"></span>
+        <p class="time">March 19th 2021, 9:25:32 am</p>
+      </div>
     </header>
-
-  <div class="main">
-    <section id="id1" class="display">
-        <h1>All awesome books</h1>
-        <div class="books">
-
+    <main class="container">
+      <section
+        id="books-list"
+        class="section section--active books-list-section"
+      >
+        <div><h1>All awesome books</h1></div>
+        <div class="books-list"></div>
+      </section>
+      <section id="book-form" class="section book-form-section">
+        <div class="newBook">
+          <form action="#" class="books-creator">
+            <div><h1>Add a new book</h1></div>
+            <input
+              type="text"
+              class="title"
+              name="title"
+              placeholder="Title"
+              required
+            />
+            <input
+              type="text"
+              class="author"
+              name="author"
+              placeholder="Author"
+              required
+            />
+            <input class="btn add" type="submit" value="Add" />
+          </form>
         </div>
-    </section><br>
-
-    <form id="id2" method="post">
-        <h2>Add a new book</h2>
-        <input type="text" id="title" name="title" placeholder="Title" required><br><br>
-        <input type="text" id="author" name="author" placeholder="Author" required><br><br>
-        <input type="submit" class="done" value="Add" id="submit">
-    </form>
-    <section id="id3" class="contact">
+      </section>
+      <section id="contact" class="section contact-section">
+        <div><h1>Contact information</h1></div>
         <div>
-           <h2>Contact information</h2>
-           <p>Do you have any questions or you just want to say "hello"? You can reach out to us!</p>
-           <ul>
-               <li>Our email: mroboot9@gmail.com</li>
-               <li>Our phone number: 680802324</li>
-               <li>Our address:yaounde</li>
-           </ul>
+          <p>
+            Do have any questions or you just want to say "Hello"? <br />
+            You can reach out to us!
+          </p>
         </div>
-    </section>
-    </div>
-    <footer class="copy">
-        <div class="copyright">
-          <small>Copyright 2022: created by soulemanou and nelson peot</small>
+        <div>
+          <ul>
+            <li>Our e-mail: mail@mail.com</li>
+            <li>Our phone number: 0043586534422</li>
+            <li>Our address: Streetname 22, 84503 City, Country</li>
+          </ul>
         </div>
-      </footer>
-   <script src="js/app.js" defer></script>
-</body>
-
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__content">Copyrights ...</div>
+      </div>
+    </footer>
+    <script src="js/app.js"></script>
+    <script src="js/nav.js"></script>
+  </body>
 </html>

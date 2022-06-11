@@ -1,67 +1,109 @@
-/* eslint-disable no-unused-vars */
-let books = [];
+Skip to content
+Search or jump to…
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@soulemanou-software 
+teckim
+/
+awesome-books
+Public
+Code
+Issues
+2
+Pull requests
+Actions
+Projects
+Wiki
+Security
+Insights
+awesome-books/src/app.js /
+@teckim
+teckim Add navigation feature and refactor
+Latest commit a1e2434 16 days ago
+ History
+ 3 contributors
+@teckim@bruk19@Mugiira-Kim
+78 lines (64 sloc)  2.05 KB
 
-// retrieve saved books
-function retrieve() {
-  const data = JSON.parse(localStorage.getItem('aboutBook'));
-  if (data) {
-    books = JSON.parse(localStorage.getItem('aboutBook'));
+
+/* eslint-disable no-plusplus */
+/* eslint-disable radix */
+
+let myLibrary = [];
+let storage = [];
+
+const booksTable = document.querySelector('.books-list');
+const title = document.querySelector('.title');
+const author = document.querySelector('.author');
+const addBtn = document.querySelector('.add');
+
+storage = JSON.parse(localStorage.getItem('books')) || [];
+
+function addBook(book, title, author) {
+  book.title = title;
+  book.author = author;
+
+  const bookLabel = document.createElement('article');
+  const bookText = document.createElement('h4');
+  const deleteButton = document.createElement('button');
+
+  bookLabel.classList.add('bookLabel');
+  bookText.classList.add('bookText');
+  deleteButton.classList.add('btn');
+  deleteButton.classList.add('delete');
+
+  booksTable.appendChild(bookLabel);
+  bookLabel.appendChild(bookText);
+  bookLabel.appendChild(deleteButton);
+
+  bookText.textContent = `"${title}" by ${author}`;
+  deleteButton.textContent = 'Delete';
+
+  const l = bookLabel.style;
+  l.display = 'flex';
+  l.alignItems = 'center';
+
+  deleteButton.style.margin = '0 5px';
+  deleteButton.style.flex = '1';
+  bookText.style.flex = '7';
+  deleteButton.style.transform = 'translateX(0)';
+  deleteButton.style.height = '45px';
+
+  deleteButton.addEventListener('click', (event) => {
+    event.target.parentNode.remove();
+    book.remove();
+  });
+}
+
+class Books {
+  constructor(title, author) {
+    this.title = title;
+    this.author = author;
+  }
+
+  add() {
+    myLibrary.push(this);
+    addBook(this, title.value, author.value);
+    localStorage.setItem('books', JSON.stringify(myLibrary));
+  }
+
+  remove() {
+    myLibrary = myLibrary.filter((element) => element !== this);
+    localStorage.setItem('books', JSON.stringify(myLibrary));
   }
 }
-retrieve();
-
-const main = document.querySelector('.books');
-
-function addBook(enteredTitle, enteredAuthor) {
-  books.push({ title: enteredTitle, author: enteredAuthor });
+for (let i = 0; i < storage.length; i += 1) {
+  const book = new Books();
+  book.title = storage[i].title;
+  book.author = storage[i].author;
+  myLibrary.push(book);
+  addBook(myLibrary[i], myLibrary[i].title, myLibrary[i].author);
 }
-// Dsiplay books
-function show(index) {
-  const bookName = books[index].title;
-  const authorName = books[index].author;
-
-  const book = document.createElement('div');
-  book.innerHTML = '';
-  book.innerHTML = `
-      ${bookName}
-      <br>
-      ${authorName}
-      <br>
-      <button type='button' class="remove" data-id=${index} onclick="removeBook(this)">Remove</button>
-      <hr>`;
-  main.appendChild(book);
-}
-
-for (let i = 0; i < books.length; i += 1) {
-  show(i);
-}
-
-function removeBook(item) {
-  // Get saved books
-  retrieve();
-  // Remove book
-  books = books.filter((element) => element !== books[item.getAttribute('data-id')]);
-  // Update books
-  localStorage.setItem('aboutBook', JSON.stringify(books));
-  // Initialize screen
-  main.innerHTML = '';
-  // Display books
-  for (let i = 0; i < books.length; i += 1) {
-    show(i);
-  }
-}
-
-const add = document.querySelector('#add');
-
-add.addEventListener('click', (e) => {
+addBtn.addEventListener('click', (e) => {
   e.preventDefault();
-
-  const t = document.querySelector('#title').value;
-  const a = document.querySelector('#author').value;
-  addBook(t, a);
-
-  // update local storage
-  localStorage.setItem('aboutBook', JSON.stringify(books));
-
-  show(books.length - 1);
+  const book = new Books();
+  book.add();
 });
