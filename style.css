@@ -1,5 +1,151 @@
+/* Here you apply all kinds of styling to your app UIs */
+html {
+  scroll-behavior: smooth;
+  font-family: sans-serif;
+}
+
 body {
-  padding: 0;
-  margin: 0;
+  background-color: lightblue;
+}
+
+header {
+  text-align: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  max-height: 0;
+  visibility: hidden;
+  overflow: hidden;
+  opacity: 0;
+  transition: opacity ease-in-out 1s;
+}
+
+.section.section--active {
+  visibility: visible;
+  max-height: none;
+  opacity: 1;
+}
+
+.section h1 {
+  margin-top: 24px;
+  text-align: center;
+}
+
+.contact-section {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.books-list {
+  border: 1px solid black;
+}
+
+.bookLabel {
+  padding-left: 12px;
+}
+
+.bookLabel:nth-child(2n + 1) {
+  background-color: rgba(227, 255, 67, 0.671);
+}
+
+.newBook {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.books-creator {
+  width: 500px;
+}
+
+form h2 {
+  width: 100%;
+  text-align: center;
+}
+
+input {
+  width: 100%;
+  margin: 8px 0;
+  height: 30px;
+  box-sizing: border-box;
+}
+
+.btn {
+  width: 120px;
+  margin-left: 100%;
+  transform: translateX(-100%);
+  padding: 5px 20px;
+  box-sizing: border-box;
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+  border: 1px solid gray;
+  height: 40px;
+}
+
+.head ul {
+  list-style: none;
+  display: flex;
+}
+
+.head li {
+  display: flex;
+  align-items: center;
+}
+
+.head li:not(:last-child)::after {
+  content: "";
   display: block;
+  min-width: 2px;
+  height: 24px;
+  margin: 0 18px;
+  border-radius: 1px;
+  background-color: rgb(43, 100, 243);
+}
+
+.head a {
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+}
+
+.head h2 {
+  padding-left: 40px;
+}
+
+.link.link--active {
+  color: rgb(43, 100, 243);
+}
+
+.time {
+  text-align: right;
+  margin: 4px 0;
+}
+
+.footer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 30px;
+}
+
+.footer .footer__content {
+  padding: 12px 24px;
+  font-size: 23px;
+  border: 1px solid black;
 }

@@ -1,23 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Awesome Books</title>
-</head>
-<body>
-   <h1>Awesome Books</h1>
-
-   <div class="books"></div>
-
-   <form method="post">
-    <input id="title" type="text" name="title" placeholder="Title" required><br><br>
-    <input id="author" type="text" name="author" placeholder="Author" required><br><br>
-    <input id="add" type="submit" value="Add" required>
-   </form>
-
-   <script src="js/app.js" defer></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Awesome books By Mr soulemanou</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav class="head">
+          <h3>Awesome Books</h3>
+          <ul>
+            <li>
+              <a
+                href="#"
+                class="link link--active"
+                id="link-list"
+                data-section="books-list"
+                >List</a
+              >
+            </li>
+            <li>
+              <a href="#" class="link" id="link-add" data-section="book-form"
+                >Add new</a
+              >
+            </li>
+            <li>
+              <a href="#" class="link" id="link-contact" data-section="contact"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <p class="time">June 10th 2022, 10:00:32 am</p>
+      </div>
+    </header>
+    <main class="container">
+      <section
+        id="books-list"
+        class="section section--active books-list-section"
+      >
+        <div><h1>All awesome books</h1></div>
+        <div class="books-list"></div>
+      </section>
+      <section id="book-form" class="section book-form-section">
+        <div class="newBook">
+          <form action="#" class="books-creator">
+            <div><h1>Add a new book</h1></div>
+            <input
+              type="text"
+              class="title"
+              name="title"
+              placeholder="Title"
+              required
+            />
+            <input
+              type="text"
+              class="author"
+              name="author"
+              placeholder="Author"
+              required
+            />
+            <input class="btn add" type="submit" value="Add" />
+          </form>
+        </div>
+      </section>
+      <section id="contact" class="section contact-section">
+        <div><h1>Contact information</h1></div>
+        <div>
+          <p>
+            Do have any questions or you just want to say "Hello"? <br />
+            You can reach out to us!
+          </p>
+        </div>
+        <div>
+          <ul>
+            <li>Our e-mail: mroboot9@mail.com</li>
+            <li>Our phone number: +237 680802324</li>
+            <li>Our address: yaounde,bastos, Camerron</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__content">Copyrights By soulemanou kunchiefuh babanou</div>
+      </div>
+    </footer>
+    <script src="js/app.js"></script>
+    <script src="js/nav.js"></script>
+  </body>
 </html>
