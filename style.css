@@ -4,6 +4,10 @@ html {
   font-family: sans-serif;
 }
 
+body {
+  background-color: lightblue;
+}
+
 header {
   text-align: center;
 }
@@ -49,7 +53,7 @@ header {
 }
 
 .bookLabel:nth-child(2n + 1) {
-  background-color: rgba(94, 87, 87, 0.671);
+  background-color: rgba(227, 255, 67, 0.671);
 }
 
 .newBook {

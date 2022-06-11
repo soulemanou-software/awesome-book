@@ -1,6 +1,5 @@
 const linkElments = document.querySelectorAll('.link');
 const sectionElments = document.querySelectorAll('.section');
-
 function onLinkClick(event) {
   const { section } = event.target.dataset;
 
