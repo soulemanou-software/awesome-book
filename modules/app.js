@@ -1,5 +1,6 @@
 /* eslint-disable no-plusplus */
 /* eslint-disable radix */
+import navigators from '../nav.js'
 
 let myLibrary = [];
 let storage = [];
@@ -83,3 +84,4 @@ addBtn.addEventListener('click', (e) => {
     message.innerHTML = 'Book added successfully';
     console.log(message);
 });
+navigators();
