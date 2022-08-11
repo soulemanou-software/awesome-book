@@ -5,17 +5,19 @@ html {
 }
 
 body {
-  background-color: lightblue;
+  background-color: rgb(245, 245, 245);
 }
 
 header {
   text-align: center;
+  
 }
 
 .container {
   width: 100%;
   max-width: 800px;
   margin: 0 auto;
+  
 }
 
 .section {
@@ -25,7 +27,6 @@ header {
   visibility: hidden;
   overflow: hidden;
   opacity: 0;
-  transition: opacity ease-in-out 1s;
 }
 
 .section.section--active {
@@ -37,15 +38,29 @@ header {
 .section h1 {
   margin-top: 24px;
   text-align: center;
+  font-size: 3vw;
 }
 
 .contact-section {
   max-width: 600px;
   margin: 0 auto;
+  background-color: hsl(0, 0%, 0%);
+  color: hsl(0, 0%, 100%);
+  padding: 2%;
+  border-radius:10px ;
+  border: 5px solid rgb(3, 219, 100);
+  box-shadow: -1px 2px 23px -3px rgba(0,0,0,0.38);
+  -webkit-box-shadow: -1px 2px 23px -3px rgba(0,0,0,0.38);
+  -moz-box-shadow: -1px 2px 23px -3px rgba(0,0,0,0.38);
 }
 
 .books-list {
-  border: 1px solid black;
+  border: 5px solid rgb(3, 219, 100);
+  border-radius:10px ;
+  transition: opacity ease-in-out 1s;
+  box-shadow: -1px 2px 23px -3px rgba(0,0,0,0.38);
+  -webkit-box-shadow: -1px 2px 23px -3px rgba(0,0,0,0.38);
+  -moz-box-shadow: -1px 2px 23px -3px rgba(0,0,0,0.38);
 }
 
 .bookLabel {
@@ -53,7 +68,8 @@ header {
 }
 
 .bookLabel:nth-child(2n + 1) {
-  background-color: rgba(227, 255, 67, 0.671);
+  background-color: rgb(0, 0, 0);
+  color: #fff;
 }
 
 .newBook {
@@ -64,6 +80,15 @@ header {
 
 .books-creator {
   width: 500px;
+  padding: 2%;
+  border-radius:10px ;
+  border: 5px solid rgb(3, 219, 100);
+  box-shadow: -1px 2px 23px -3px rgba(0,0,0,0.38);
+  -webkit-box-shadow: -1px 2px 23px -3px rgba(0,0,0,0.38);
+  -moz-box-shadow: -1px 2px 23px -3px rgba(0,0,0,0.38);
+  background-color: black;
+  color: #fff;
+
 }
 
 form h2 {
@@ -96,11 +121,18 @@ input {
   padding: 0 24px;
   border: 1px solid gray;
   height: 40px;
+  padding: 2%;
+  border-radius:10px ;
+  border: 5px solid rgb(3, 219, 100);
+  box-shadow: -1px 2px 23px -3px rgba(0,0,0,0.38);
+  -webkit-box-shadow: -1px 2px 23px -3px rgba(0,0,0,0.38);
+  -moz-box-shadow: -1px 2px 23px -3px rgba(0,0,0,0.38);
 }
 
 .head ul {
   list-style: none;
   display: flex;
+  font-weight: 600;
 }
 
 .head li {
@@ -135,6 +167,8 @@ input {
 .time {
   text-align: right;
   margin: 4px 0;
+  font-size: 1.5vw;
+  font-weight: 700;
 }
 
 .footer {
@@ -147,5 +181,12 @@ input {
 .footer .footer__content {
   padding: 12px 24px;
   font-size: 23px;
-  border: 1px solid black;
+  padding: 2%;
+  background-color: black;
+  color: #fff;
+  border-radius:10px ;
+  border: 5px solid rgb(3, 219, 100);
+  box-shadow: -1px 2px 23px -3px rgba(0,0,0,0.38);
+  -webkit-box-shadow: -1px 2px 23px -3px rgba(0,0,0,0.38);
+  -moz-box-shadow: -1px 2px 23px -3px rgba(0,0,0,0.38);
 }

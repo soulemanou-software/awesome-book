@@ -11,6 +11,7 @@ const addBtn = document.querySelector('.add');
 
 storage = JSON.parse(localStorage.getItem('books')) || [];
 
+//  ADD BOOK HERE
 function addBook(book, title, author) {
   book.title = title;
   book.author = author;
@@ -46,7 +47,7 @@ function addBook(book, title, author) {
     book.remove();
   });
 }
-
+// END OF ADD BOOK HERE
 class Books {
   constructor(title, author) {
     this.title = title;
