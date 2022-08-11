@@ -45,6 +45,9 @@ function addBook(book, title, author) {
   deleteButton.addEventListener('click', (event) => {
     event.target.parentNode.remove();
     book.remove();
+    const  removemsg = document.querySelector('#removemsg');
+     removemsg.innerHTML = 'Book removed successfully';
+    console.log( removemsg);
   });
 }
 // END OF ADD BOOK HERE
@@ -76,4 +79,7 @@ addBtn.addEventListener('click', (e) => {
   e.preventDefault();
   const book = new Books();
   book.add();
+  const message = document.querySelector('#message');
+    message.innerHTML = 'Book added successfully';
+    console.log(message);
 });
