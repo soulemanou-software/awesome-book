@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name: Awesome book project in js 
+# Awesome book project in js 
 
 > Description the project.
 >This project is about a book website called awesome book which proposess you variety of book to add and remove from you store.
@@ -70,17 +70,7 @@ To get a local copy up and running follow these simple example steps.
  - SOULEMANOU KUNCHIEFUH BABANOU**
 - GitHub: [@githubhandle](https://github.com/soulemanou-software)
 - Twitter: [@twitterhandle](https://twitter.com/fastdevz1)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-## Authors   
-👤 **Author2**
- - ***SNelson ongit*i**
-- GitHub: [https://github.com/MicroverseNelson)
-- Twitter: [@twitterhandle](https://twitter.com/PentonPoet)
-- LinkedIn: [https://ke.linkedin.com/in/nelson-ongiti-4036a119a)
-    
-
-    
-    
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/soulemanou-kunchiefuh-babanou-454099196/) 
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
