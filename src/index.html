@@ -4,16 +4,21 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Awesome books By Mr soulemanou</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Awesome Books ES6</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="index.css" />
+
+    <!-- Scripts -->
+
   </head>
   <body>
-    <header>
+    <header class="header">
       <div class="container">
-        <nav class="head">
-          <h3>Awesome Books</h3>
-          <ul>
-            <li>
+        <nav class="header__nav">
+          <div class="header__nav-title">Awesome Books</div>
+          <ul class="header__nav-list">
+            <li class="header__nav-list-item">
               <a
                 href="#"
                 class="link link--active"
@@ -22,53 +27,49 @@
                 >List</a
               >
             </li>
-            <li>
+            <li class="header__nav-list-item">
               <a href="#" class="link" id="link-add" data-section="book-form"
                 >Add new</a
               >
             </li>
-            <li>
+            <li class="header__nav-list-item">
               <a href="#" class="link" id="link-contact" data-section="contact"
                 >Contact</a
               >
             </li>
           </ul>
         </nav>
-        <p class="time">June 10th 2022, 10:00:32 am</p>
+        <p class="header__time"></p>
       </div>
     </header>
     <main class="container">
       <section
         id="books-list"
-        class="section section--active books-list-section"
+        class="section section--active"
       >
-        <div><h1>All awesome books</h1></div>
+        <h1>All awesome books</h1>
         <div class="books-list"></div>
       </section>
       <section id="book-form" class="section book-form-section">
-        <div class="newBook">
-          <form action="#" class="books-creator">
-            <div><h1>Add a new book</h1></div>
-            <input
-              type="text"
-              class="title"
-              name="title"
-              placeholder="Title"
-              required
-            />
-            <input
-              type="text"
-              class="author"
-              name="author"
-              placeholder="Author"
-              required
-            />
-            <input class="btn add" type="submit" value="Add" />
-          </form>
-        </div>
+        <h1>Add a new book</h1>
+        <form class="book-form">
+          <input
+            class="book-form__input"
+            name="title"
+            placeholder="Title"
+            required
+          />
+          <input
+            class="book-form__input"
+            name="author"
+            placeholder="Author"
+            required
+          />
+          <button class="book-form__button button" type="submit">Add</button>
+        </form>
       </section>
-      <section id="contact" class="section contact-section">
-        <div><h1>Contact information</h1></div>
+      <section id="contact" class="section contact">
+        <h1>Contact information</h1>
         <div>
           <p>
             Do have any questions or you just want to say "Hello"? <br />
@@ -77,19 +78,18 @@
         </div>
         <div>
           <ul>
-            <li>Our e-mail: mroboot9@mail.com</li>
+            <li>Our e-mail: mroboot9@gmail.com</li>
             <li>Our phone number: +237 680802324</li>
-            <li>Our address: yaounde,bastos, Camerron</li>
+            <li>Our address: Yaounde,cameroon</li>
           </ul>
         </div>
       </section>
     </main>
     <footer class="footer">
       <div class="container">
-        <div class="footer__content">Copyrights By soulemanou kunchiefuh babanou</div>
+        <div class="footer__content">Copyrights ...</div>
       </div>
     </footer>
-    <script src="js/app.js"></script>
-    <script src="js/nav.js"></script>
+    <script src="index.js" type="module"></script>
   </body>
 </html>

@@ -1,0 +1,165 @@
+/* resets */
+html {
+  scroll-behavior: smooth;
+  font-family: sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* commun */
+.link.link--active {
+  color: rgb(243, 43, 120);
+}
+
+.button {
+  padding: 4px 8px;
+  font-weight: 600;
+  border-radius: 0;
+  background-color: rgb(234, 238, 0);
+  box-shadow: 2px 2px 0 0 rgba(0, 0, 0, 1);
+  -webkit-box-shadow: 2px 2px 0 0 rgba(0, 0, 0, 1);
+  -moz-box-shadow: 2px 2px 0 0 rgba(0, 0, 0, 1);
+}
+
+.container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  max-height: 0;
+  visibility: hidden;
+  overflow: hidden;
+  opacity: 0;
+  transition: opacity ease-in-out 1s;
+}
+
+.section.section--active {
+  visibility: visible;
+  max-height: none;
+  opacity: 1;
+}
+
+.section h1 {
+  margin-top: 24px;
+  text-align: center;
+}
+
+/* Header */
+.header {
+  text-align: center;
+}
+
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+  border: 1px solid rgb(4, 0, 255);
+  height: 40px;
+}
+
+.header__nav-title {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.header__nav-list {
+  list-style: none;
+  display: flex;
+}
+
+.header__nav-list-item {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+}
+
+.header__nav-list-item:not(:last-child)::after {
+  content: "";
+  display: block;
+  min-width: 2px;
+  height: 24px;
+  margin: 0 18px;
+  border-radius: 1px;
+  background-color: rgb(255, 0, 0);
+}
+
+.header__time {
+  text-align: right;
+  margin: 4px 0;
+}
+
+/* Books list */
+.books-list {
+  border: 4px solid rgb(4, 0, 255);
+}
+
+/* Book card */
+.book-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 12px;
+}
+
+.book-card:nth-child(2n+1) {
+  background-color: #008cff;
+  color: rgb(255, 255, 255);
+}
+
+.book-card .book-card__content {
+  font-weight: 600;
+}
+
+/* Book form */
+.book-form {
+  max-width: 500px;
+  margin: 0 auto;
+  padding-bottom: 4px;
+}
+
+.book-form .book-form__input {
+  width: 100%;
+  padding: 4px 8px;
+  margin-bottom: 24px;
+  height: 30px;
+  border: 2px solid rgb(55, 0, 255);
+  font-weight: 600;
+  color: #000;
+}
+
+/* Contact */
+.contact {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact ul {
+  list-style: disc;
+}
+
+/* Footer */
+.footer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 30px;
+}
+
+.footer .footer__content {
+  padding: 12px 24px;
+  font-size: 18px;
+  font-weight: 600;
+  border: 1px solid rgb(4, 0, 255);
+}
